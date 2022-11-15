@@ -5,12 +5,13 @@ import Login from './Login.jsx'
 
 
 const App = () => {
+  const [login, setLogin] = useState(true)
 
   return (
     <div className="main">
-      {/* <h1 className="main-header">API </h1> */}
-      <Login />
-      {/* <Agents /> */}
+      <h1 className="main-header">Valorant API</h1>
+      {login ? <Login /> : null}
+      <Agents />
     </div>
   )
 }

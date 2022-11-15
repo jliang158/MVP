@@ -60,7 +60,6 @@ app.post('/submit', async (req, res) => {
           maxVal += result.rows[i].id
           maxVal += 1
         }
-        console.log('THDSFJPIDSJ', maxVal)
         db.query(`INSERT INTO login(id, username, password) VALUES(${maxVal}, '${req.body.username}', '${req.body.password}') RETURNING *`)
           .then(resst => res.status(201).json(resst.rows))
         })
