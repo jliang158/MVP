@@ -7,7 +7,7 @@ const pool = new Pool({
   database: process.env.DB_NAME,
   password: process.env.DB_PASS
 })
-console.log('hellooo')
+
 pool.connect()
 
 
