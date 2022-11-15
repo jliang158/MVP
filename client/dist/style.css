@@ -1,0 +1,30 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  background-color: #364966;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  align-self: center;
+}
+
+.displayIcon {
+  height: 100px;
+}
+
+.background {
+  height: 100px;
+}
+
+.agents-scroll {
+  overflow-y: scroll;
+  max-height: 80vh;
+  margin-bottom: 2em;
+}
