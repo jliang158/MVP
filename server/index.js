@@ -50,7 +50,7 @@ app.post('/submit', async (req, res) => {
     if (result.rows.length === 0) {
       throw new Error('user doesnt exists')
     }
-    res.send('user already exists')
+    res.send('exists')
   } catch (err) {
     let maxVal = 0;
     db.query(`SELECT * FROM login WHERE id=(SELECT max(id) FROM login)`)

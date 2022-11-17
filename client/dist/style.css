@@ -73,3 +73,17 @@ body {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
+.exit {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
